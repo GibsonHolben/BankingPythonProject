@@ -50,7 +50,10 @@ def button_Setup():
 
     login_button.place(x=250, y=500)
     create_button.place(x=700, y=500)
-    exit_button.place(x=1850, y=0)
+    exit_button.place(x=1874, y=5)
+
+
+
 
 
 screen_setup()
