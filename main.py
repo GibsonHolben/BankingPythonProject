@@ -53,9 +53,6 @@ def button_Setup():
     exit_button.place(x=1874, y=5)
 
 
-
-
-
 screen_setup()
 button_Setup()
 
