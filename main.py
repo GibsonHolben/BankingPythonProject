@@ -8,12 +8,18 @@ import file_managr as fm
 
 canvas = None
 v.state = 0
-home = os.path.expanduser('~')
 
-path = home + '/Documents/PythonBank/'
-v.users = fm.read_file(home + '/Documents/PythonBank/users.bank').split(',')
-v.passwords = fm.read_file(home + '/Documents/PythonBank/pass.bank').split(',')
-v.balance = fm.read_file(home + '/Documents/PythonBank/bal.bank  ').split(',')
+
+path = v.home + '/Documents/PythonBank/'
+
+# Check if the folder exists
+if not os.path.isdir(path):
+    # if not make one
+    os.makedirs(path)
+
+v.names = fm.read_file(v.home + '/Documents/PythonBank/names.bank').split(',')
+v.passwords = fm.read_file(v.home + '/Documents/PythonBank/pass.bank').split(',')
+v.balance = fm.read_file(v.home + '/Documents/PythonBank/bal.bank  ').split(',')
 
 if v.names[0] == '':
     v.names[0] = 'DEFAULT_USER'
@@ -22,10 +28,6 @@ if v.passwords[0] == '':
 if v.balance[0] == '':
     v.balance[0] = '0'
 
-# Check if the folder exists
-if not os.path.isdir(path):
-    # if not make one
-    os.makedirs(path)
 
 
 def screen_setup():
@@ -40,6 +42,8 @@ def screen_setup():
 def button_Setup():
     login_button = Button(canvas.master, text="Login", command=cmd.login, height=5, width=40)
     v.Buttons.append(login_button)
+    create_button = Button(canvas.master, text="Create", command=cmd.create, height=5, width=40)
+    v.Buttons.append(create_button)
     exit_button = Button(canvas.master, text="X", command=cmd.exit_b, height=3, width=5)
     v.Buttons.append(exit_button)
 
@@ -47,6 +51,7 @@ def button_Setup():
         button.pack()
 
     login_button.place(x=250, y=500)
+    create_button.place(x=700, y=500)
     exit_button.place(x=1850, y=0)
 
 

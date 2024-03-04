@@ -1,6 +1,6 @@
 import os
 import shutil
-
+import Variables as v
 
 def rem_file(path):
     """Removes the specified file"""
@@ -49,3 +49,23 @@ def write_file(path, contents):
     except:
         print('could not write to the file at: ' + path)
 
+
+def save_data():
+    """Saves all the data of the program"""
+    to_save = ''
+    for x in v.names:
+        to_save = to_save + x + ','
+    to_save = to_save.strip(',')
+    write_file(v.home + '/Documents/PythonBank/names.bank', to_save)
+
+    to_save = ''
+    for x in v.passwords:
+        to_save = to_save + x + ','
+    to_save = to_save.strip(',')
+    write_file(v.home + '/Documents/PythonBank/pass.bank', to_save)
+
+    to_save = ''
+    for x in v.balance:
+        to_save = to_save + x + ','
+    to_save = to_save.strip(',')
+    write_file(v.home + '/Documents/PythonBank/bal.bank', to_save)

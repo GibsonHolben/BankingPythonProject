@@ -1,3 +1,4 @@
+import os
 
 Buttons = []
 
@@ -11,6 +12,7 @@ state = 0
 
 passwords = ['TEST_PASS']
 names = ['TEST_NAME']
-balance = [0]
+balance = ['0']
 screen = None
+home = os.path.expanduser('~')
 
