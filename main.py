@@ -9,7 +9,6 @@ import file_managr as fm
 canvas = None
 v.state = 0
 
-
 path = v.home + '/Documents/PythonBank/'
 
 # Check if the folder exists
@@ -27,7 +26,6 @@ if v.passwords[0] == '':
     v.passwords[0] = 'DEFAULT_PASS'
 if v.balance[0] == '':
     v.balance[0] = '0'
-
 
 
 def screen_setup():
