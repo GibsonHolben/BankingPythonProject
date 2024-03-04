@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <mxfile host="app.diagrams.net" modified="2024-03-04T14:31:37.671Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="kJg_NkCf_adX7y5cynEe" version="24.0.1" type="github">
   <diagram name="Page-1" id="fincvI1R2WQqriWBfzAJ">
@@ -7,6 +8,11 @@
   <diagram name="Page-1" id="fincvI1R2WQqriWBfzAJ">
     <mxGraphModel dx="2643" dy="2205" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
 >>>>>>> Stashed changes
+=======
+<mxfile host="app.diagrams.net" modified="2024-03-04T14:30:03.031Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="_aXadMOEKLGv6MVhx1EG" version="24.0.1" type="github">
+  <diagram name="Page-1" id="fincvI1R2WQqriWBfzAJ">
+    <mxGraphModel dx="2284" dy="2007" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+>>>>>>> parent of f2f7380 (Update BankingSystem.drawio)
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -215,10 +221,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
         <mxCell id="QriSIqEkXjdC2TyLpd2e-131" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=#999999;" edge="1" parent="1" source="QriSIqEkXjdC2TyLpd2e-64" target="QriSIqEkXjdC2TyLpd2e-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+=======
+>>>>>>> parent of f2f7380 (Update BankingSystem.drawio)
         <mxCell id="QriSIqEkXjdC2TyLpd2e-64" value="&lt;div&gt;os&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
 =======
         <mxCell id="QriSIqEkXjdC2TyLpd2e-64" value="&lt;div&gt;os&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
