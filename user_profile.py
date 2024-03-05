@@ -1,17 +1,13 @@
 import os
-import turtle
-from turtle import Screen
+import tkinter
 from tkinter import *
 import Variables as v
 import ButtonClicks as cmd
 import file_managr as fm
 
-canvas = None
 
-
-def login(index):
+def profile_page(index):
     v.Buttons = []
-    turtle.Screen().bye()
 
     print(v.names[index])
     v.state = 0
@@ -35,21 +31,25 @@ def login(index):
         v.balance[0] = '0'
 
     screen_setup()
-    button_Setup()
+    button_Setup(index)
+
 
 def screen_setup():
-    global canvas
-    v.screen = Screen()
-    v.screen.setup(width=1.0, height=1.0)
-    canvas = v.screen.getcanvas()
-    root = canvas.winfo_toplevel()
-    root.overrideredirect(1)
+    v.screen = Tk()
+    v.screen.overrideredirect(True)
+    v.screen.geometry("{0}x{1}+0+0".format(v.screen.winfo_screenwidth(), v.screen.winfo_screenheight()))
+    v.screen.overrideredirect(1)
 
-def button_Setup():
-    exit_button = Button(canvas.master, text="X", command=cmd.exit_b, height=3, width=5)
+
+def button_Setup(index):
+    exit_button = Button(v.screen, text="X", command=cmd.exit_b, height=3, width=5)
     v.Buttons.append(exit_button)
-
+    name_display = tkinter.Label(v.screen, text=v.names[index], font=("Arial", 20))
+    v.Buttons.append(name_display)
+    canvas = tkinter.Canvas(v.screen, width=200, height=30, bg='white')
+    v.Buttons.append()
     for button in v.Buttons:
         button.pack()
 
     exit_button.place(x=1874, y=5)
+    name_display.place(x=0, y=0)

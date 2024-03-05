@@ -2,6 +2,7 @@ import os
 import shutil
 import Variables as v
 
+
 def rem_file(path):
     """Removes the specified file"""
     try:
