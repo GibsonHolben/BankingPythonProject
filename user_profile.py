@@ -38,16 +38,16 @@ def screen_setup():
     v.screen = Tk()
     v.screen.overrideredirect(True)
     v.screen.geometry("{0}x{1}+0+0".format(v.screen.winfo_screenwidth(), v.screen.winfo_screenheight()))
-    v.screen.overrideredirect(1)
+    v.screen.overrideredirect()
 
 
 def button_Setup(index):
     exit_button = Button(v.screen, text="X", command=cmd.exit_b, height=3, width=5)
     v.Buttons.append(exit_button)
-    name_display_background = tkinter.Canvas(v.screen, width=200, height=30, bg='white')
-    v.Buttons.append(name_display_background)
+    name_display = tkinter.Label(v.screen, text=v.names[index], font=("Arial", 20))
+    v.Buttons.append(name_display)
     for button in v.Buttons:
         button.pack()
 
     exit_button.place(x=1874, y=5)
-    name_display_background.place(x=0,y=0)
+    name_display.place(x=0, y=0)

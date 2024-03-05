@@ -15,4 +15,3 @@ names = ['TEST_NAME']
 balance = ['0']
 screen = None
 home = os.path.expanduser('~')
-
